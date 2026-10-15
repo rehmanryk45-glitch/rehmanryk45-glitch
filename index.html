@@ -1,93 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b1220">
-  <meta name="description" content="Rehman Sadiq — Electrical Automation, Motor Control, Electrical Wiring, Troubleshooting and Control Panels.">
-  <title>Rehman Sadiq | Electrical Automation</title>
-  <style>
-    :root{--bg:#08111f;--panel:#101c2d;--panel2:#0d1726;--text:#edf5ff;--muted:#a7b7ca;--accent:#22d3ee;--line:#26384d}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 85% 0%,#112b42 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.6}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-    header{position:sticky;top:0;z-index:5;background:#08111fe8;backdrop-filter:blur(14px);border-bottom:1px solid #203148}
-    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
-    .mark{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--accent);color:#06111c;font-size:23px;font-weight:900}
-    nav{display:flex;gap:24px;color:var(--muted);font-size:14px}nav a:hover{color:var(--accent)}
-    .hero{padding:86px 0 74px;display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:center}
-    .eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
-    h1{font-size:clamp(40px,6vw,68px);line-height:1.06;letter-spacing:-2px;margin:18px 0}
-    h1 span{color:var(--accent)}.lead{max-width:650px;color:var(--muted);font-size:18px}
-    .actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:10px;font-weight:750;border:1px solid var(--line)}
-    .primary{background:var(--accent);color:#06111c;border-color:var(--accent)}.secondary:hover{border-color:var(--accent)}
-    .hero-card{background:linear-gradient(145deg,#14253a,#0c1726);border:1px solid #263b52;border-radius:22px;padding:24px;box-shadow:0 25px 80px #0004}
-    .visual{height:260px;border-radius:16px;background:linear-gradient(135deg,#102c40,#0c1726);border:1px solid #29465d;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-    .visual:before,.visual:after{content:"";position:absolute;border:1px solid #22d3ee40;border-radius:50%;width:260px;height:260px}
-    .visual:after{width:190px;height:190px}.bolt{font-size:88px;color:var(--accent);filter:drop-shadow(0 0 24px #22d3ee55)}
-    .card-caption{margin:18px 0 0;color:var(--muted);font-size:13px}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:17px}
-    .mini{background:#0a1422;border:1px solid #24374b;border-radius:12px;padding:13px;font-size:13px;color:#c9d7e7}.mini strong{display:block;color:var(--text);font-size:14px}
-    section{padding:66px 0;border-top:1px solid #1c2b3e}.section-head{max-width:680px;margin-bottom:30px}h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:9px 0 12px;letter-spacing:-.8px}.muted{color:var(--muted)}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px}
-    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill{padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:15px}.skill .icon{font-size:25px;color:var(--accent)}.skill h3{font-size:16px;margin:10px 0 5px}.skill p{font-size:13px;color:var(--muted);margin:0}
-    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.project{background:linear-gradient(150deg,#13243a,#0d1726);border:1px solid var(--line);border-radius:16px;padding:22px}.project .number{font-size:12px;color:var(--accent);letter-spacing:1px;font-weight:800}.project h3{margin:10px 0 8px}.project p{color:var(--muted);font-size:14px;margin:0}
-    .contact{display:flex;justify-content:space-between;align-items:center;gap:25px;background:linear-gradient(120deg,#123044,#101c2d);border:1px solid #285066;border-radius:22px;padding:30px}
-    footer{padding:25px 0;color:#8294a9;font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-    @media(max-width:800px){nav{gap:12px;font-size:12px}.hero{grid-template-columns:1fr;padding-top:58px;gap:30px}.hero-card{max-width:540px}.skills{grid-template-columns:repeat(2,1fr)}.projects{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}}
-    @media(max-width:520px){.nav{height:auto;min-height:70px;align-items:flex-start;padding:14px 0;flex-direction:column}nav{width:100%;overflow-x:auto;padding-bottom:4px;white-space:nowrap}.hero{padding-top:42px}h1{letter-spacing:-1.2px}.skills{grid-template-columns:1fr}.visual{height:210px}}
-  </style>
-</head>
-<body>
-<header><div class="wrap nav">
-  <a class="brand" href="#home"><span class="mark">⚡</span><span>Rehman Sadiq</span></a>
-  <nav aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
-</div></header>
-<main>
-  <div class="wrap hero" id="home">
-    <div>
-      <div class="eyebrow">Electrical Automation & Control Panels</div>
-      <h1>Reliable electrical work.<br><span>Smarter industry.</span></h1>
-      <p class="lead">I’m Rehman Sadiq, an electrical professional focused on motor control, electrical wiring, troubleshooting, automation and control panels.</p>
-      <div class="actions"><a class="btn primary" href="https://wa.me/923097688782" target="_blank" rel="noopener">Contact on WhatsApp ↗</a><a class="btn secondary" href="#skills">Explore My Skills ↓</a></div>
-    </div>
-    <aside class="hero-card">
-      <div class="visual" aria-label="Electrical engineering visual"><div class="bolt">⚡</div></div>
-      <p class="card-caption">Electrical systems · Industrial control · Practical troubleshooting</p>
-      <div class="mini-grid"><div class="mini"><strong>Motor Control</strong>Control circuits</div><div class="mini"><strong>Panel Work</strong>Wiring & inspection</div></div>
-    </aside>
-  </div>
-
-  <section id="about"><div class="wrap">
-    <div class="section-head"><div class="eyebrow">About Me</div><h2>Electrical skills built around real-world work.</h2><p class="muted">I focus on electrical systems and industrial control work, with an emphasis on organized wiring, practical fault-finding and safe, dependable operation.</p></div>
-    <div class="about-grid"><div class="panel"><h3>Professional Focus</h3><p class="muted">Electrical Automation, Control Panels, Motor Control, Electrical Wiring and Troubleshooting.</p></div><div class="panel"><h3>Portfolio Updates</h3><p class="muted">Project photos, certifications, detailed work history and a CV can be added here as they become available.</p></div></div>
-  </div></section>
-
-  <section id="skills"><div class="wrap">
-    <div class="section-head"><div class="eyebrow">Core Skills</div><h2>What I can help with</h2><p class="muted">Key skills and areas of electrical work.</p></div>
-    <div class="skills">
-      <article class="skill"><div class="icon">ϟ</div><h3>Motor Control</h3><p>Motor starters, control circuits and operational checks.</p></article>
-      <article class="skill"><div class="icon">⌁</div><h3>Electrical Wiring</h3><p>Electrical wiring, connections and organized routing.</p></article>
-      <article class="skill"><div class="icon">⌕</div><h3>Troubleshooting</h3><p>Fault identification and systematic electrical checks.</p></article>
-      <article class="skill"><div class="icon">⌘</div><h3>Electrical Automation</h3><p>Industrial automation systems and control logic support.</p></article>
-      <article class="skill"><div class="icon">▦</div><h3>Control Panels</h3><p>Panel wiring, component identification and inspection.</p></article>
-      <article class="skill"><div class="icon">✓</div><h3>Testing & Inspection</h3><p>Careful checks to support reliable electrical operation.</p></article>
-    </div>
-  </div></section>
-
-  <section id="projects"><div class="wrap">
-    <div class="section-head"><div class="eyebrow">Selected Work</div><h2>Project highlights</h2><p class="muted">These are editable starter examples. Replace them with your actual completed projects before presenting them as work history.</p></div>
-    <div class="projects">
-      <article class="project"><div class="number">PROJECT 01</div><h3>Motor Control Circuit</h3><p>Showcase a motor starter/control circuit, its operating sequence and checks performed.</p></article>
-      <article class="project"><div class="number">PROJECT 02</div><h3>Control Panel Wiring</h3><p>Add panel photos and explain wiring, component layout and inspection work.</p></article>
-      <article class="project"><div class="number">PROJECT 03</div><h3>Electrical Troubleshooting</h3><p>Describe a real fault, your diagnostic steps and the verified result.</p></article>
-    </div>
-  </div></section>
-
-  <section id="contact"><div class="wrap"><div class="contact">
-    <div><div class="eyebrow">Get In Touch</div><h2>Let’s discuss your next project.</h2><p class="muted">For electrical work, automation and control-panel opportunities, contact me directly.</p></div>
-    <a class="btn primary" href="https://wa.me/923097688782" target="_blank" rel="noopener">WhatsApp: +92 309 7688782 ↗</a>
-  </div></div></section>
-</main>
-<footer><div class="wrap foot"><span>© <span id="year"></span> Rehman Sadiq. All rights reserved.</span><span>Electrical Automation & Control Panels</span></div></footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#08111f"><title>Rehman Sadiq | Electrical Automation</title>
+<style>
+:root{--bg:#08111f;--panel:#101c2d;--text:#edf5ff;--muted:#a7b7ca;--accent:#22d3ee;--line:#26384d}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 85% 0%,#112b42,transparent 35%),var(--bg);color:var(--text);font:16px/1.6 Inter,Segoe UI,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}header{position:sticky;top:0;background:#08111fe8;border-bottom:1px solid #203148}.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800}.mark{display:inline-grid;place-items:center;background:var(--accent);color:#06111c;border-radius:10px;padding:5px 12px;margin-right:8px;font-size:22px}nav{display:flex;gap:20px;color:var(--muted);font-size:14px}.hero{padding:70px 0;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}.eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}h1{font-size:clamp(40px,6vw,66px);line-height:1.06;letter-spacing:-2px;margin:18px 0}h1 span{color:var(--accent)}h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:9px 0 12px}.lead{color:var(--muted);font-size:18px}.muted{color:var(--muted)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.btn{display:inline-block;padding:12px 18px;border-radius:10px;font-weight:750;border:1px solid var(--line)}.primary{background:var(--accent);color:#06111c;border-color:var(--accent)}.hero-card,.panel,.skill,.project{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:22px}.photo{height:250px;display:grid;place-items:center;background:#0d2031;border:1px solid #29465d;border-radius:12px;overflow:hidden;color:var(--muted);text-align:center}.photo img{width:100%;height:100%;object-fit:cover}.mini{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.mini div{background:#0a1422;border:1px solid #24374b;border-radius:10px;padding:12px}.mini strong{display:block}.section{padding:60px 0;border-top:1px solid #1c2b3e}.section-head{max-width:720px;margin-bottom:25px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.skill h3,.project h3{margin:8px 0}.skill p,.project p{font-size:14px;color:var(--muted)}.project img{width:100%;height:145px;object-fit:cover;border-radius:10px}.tag{display:inline-block;border:1px solid #2d5368;color:#a8eefa;border-radius:99px;padding:3px 9px;font-size:12px;margin:3px}.contact{display:flex;justify-content:space-between;align-items:center;gap:20px;background:#102638;border:1px solid #285066;border-radius:18px;padding:26px}footer{padding:24px 0;color:#8294a9;font-size:13px}@media(max-width:780px){.hero{grid-template-columns:1fr;padding:45px 0}.grid3{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}nav{gap:12px;font-size:12px}}@media(max-width:520px){.nav{align-items:flex-start;flex-direction:column;padding:12px 0}nav{width:100%;overflow:auto;white-space:nowrap}.photo{height:220px}}
+</style></head><body>
+<header><div class="wrap nav"><a class="brand" href="#home"><span class="mark">⚡</span>Rehman Sadiq</a><nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></div></header>
+<main><div class="wrap hero" id="home"><div><div class="eyebrow">Electrical Automation & Control Panels</div><h1>Reliable electrical work.<br><span>Smarter industry.</span></h1><p class="lead">I’m Rehman Sadiq, an electrical professional focused on motor control, electrical wiring, troubleshooting, automation and control panels.</p><div class="actions"><a class="btn primary" href="https://wa.me/923097688782" target="_blank" rel="noopener">Contact on WhatsApp ↗</a><a class="btn" href="cv.pdf" download>Download My CV ↓</a><a class="btn" href="#skills">Explore My Skills</a></div><p class="muted"><small>Upload your actual CV as <b>cv.pdf</b> for the download button to work.</small></p></div>
+<aside class="hero-card"><div class="photo"><img src="profile.jpg" alt="Rehman Sadiq profile photo" onerror="this.remove();this.parentElement.innerHTML='<div><strong style=color:#22d3ee;font-size:22px>Rehman Sadiq</strong><br>Upload your photo as <b>profile.jpg</b></div>'"></div><p class="muted">Electrical systems · Industrial control · Practical troubleshooting</p><div class="mini"><div><strong>Motor Control</strong><small>Control circuits</small></div><div><strong>Panel Work</strong><small>Wiring & inspection</small></div></div></aside></div>
+<section class="section" id="about"><div class="wrap"><div class="section-head"><div class="eyebrow">About Me</div><h2>Electrical skills built around real-world work.</h2><p class="muted">I focus on electrical systems and industrial control work, with an emphasis on organized wiring, practical fault-finding and safe, dependable operation.</p></div><div class="grid2"><div class="panel"><h3>Professional Focus</h3><p class="muted">Electrical Automation, Control Panels, Motor Control, Electrical Wiring and Troubleshooting.</p></div><div class="panel"><h3>Qualifications & Certificates</h3><p class="muted">Add only your real qualifications, training and certificates here.</p></div></div></div></section>
+<section class="section" id="skills"><div class="wrap"><div class="section-head"><div class="eyebrow">Core Skills</div><h2>What I can help with</h2></div><div class="grid3"><article class="skill"><h3>⚡ Motor Control</h3><p>Motor starters, control circuits and operational checks.</p></article><article class="skill"><h3>⌁ Electrical Wiring</h3><p>Electrical wiring, connections and organized routing.</p></article><article class="skill"><h3>⌕ Troubleshooting</h3><p>Fault identification and systematic electrical checks.</p></article><article class="skill"><h3>⌘ Electrical Automation</h3><p>Industrial automation systems and control logic support.</p></article><article class="skill"><h3>▦ Control Panels</h3><p>Panel wiring, component identification and inspection.</p></article><article class="skill"><h3>✓ Testing & Inspection</h3><p>Careful checks to support reliable electrical operation.</p></article></div></div></section>
+<section class="section" id="projects"><div class="wrap"><div class="section-head"><div class="eyebrow">Selected Work</div><h2>Project highlights</h2><p class="muted">Replace these sample descriptions with projects you actually completed.</p></div><div class="grid3"><article class="project"><img src="project-motor.jpg" alt="Motor control project" onerror="this.style.display='none'"><div class="eyebrow">PROJECT 01</div><h3>Motor Control Circuit</h3><p>Describe the real circuit, components, operating sequence and checks you performed.</p><span class="tag">Motor Control</span></article><article class="project"><img src="project-panel.jpg" alt="Control panel project" onerror="this.style.display='none'"><div class="eyebrow">PROJECT 02</div><h3>Control Panel Wiring</h3><p>Describe your actual panel wiring, component layout, inspection and testing work.</p><span class="tag">Wiring</span></article><article class="project"><img src="project-troubleshooting.jpg" alt="Troubleshooting project" onerror="this.style.display='none'"><div class="eyebrow">PROJECT 03</div><h3>Electrical Troubleshooting</h3><p>Explain a real fault, your diagnostic steps and the verified result.</p><span class="tag">Fault Finding</span></article></div></div></section>
+<section class="section" id="experience"><div class="wrap"><div class="section-head"><div class="eyebrow">Experience</div><h2>Your work history</h2></div><div class="panel"><h3>Electrical Automation & Control Panels</h3><p class="muted">Focus areas: motor control, electrical wiring, troubleshooting and control panel work.</p><p class="muted">Add your accurate job title, employer (if appropriate), dates and specific achievements here.</p></div></div></section>
+<section class="section" id="contact"><div class="wrap"><div class="contact"><div><div class="eyebrow">Get In Touch</div><h2>Let’s discuss your next project.</h2><p class="muted">For electrical work, automation and control-panel opportunities, contact me directly.</p></div><a class="btn primary" href="https://wa.me/923097688782" target="_blank" rel="noopener">WhatsApp: +92 309 7688782 ↗</a></div></div></section></main>
+<footer><div class="wrap">© <span id="year"></span> Rehman Sadiq. All rights reserved.</div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>
